@@ -12,7 +12,7 @@ const getAccount = (accountId) => {
     },
   })
     .then((response) => response.json())
-    .then((data) => {
+    .then((xxx) => {
       return data.data;
     })
     .catch((err) => console.log(err));
