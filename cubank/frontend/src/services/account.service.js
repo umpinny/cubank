@@ -5,6 +5,7 @@ const API_URL = "http://localhost:4000/api/v1/transactions/";
 
 const getAccount = (accountId) => {
   let data = JSON.parse(localStorage.getItem("user"));
+  let a;
   fetch("http://localhost:4000/api/v1/transactions/" + accountId, {
     headers: {
       "Content-Type": "application/json",
@@ -12,7 +13,7 @@ const getAccount = (accountId) => {
     },
   })
     .then((response) => response.json())
-    .then((xxx) => {
+    .then((data) => {
       return data.data;
     })
     .catch((err) => console.log(err));
