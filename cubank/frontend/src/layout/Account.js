@@ -32,7 +32,7 @@ const Account = () => {
   }
 
   const [isTrans, setIsTrans] = useState(false);
-  let navigate = useNavigate();
+  //let navigate = useNavigate(); //test
 
   useEffect(() => {
     setIsPending(true);
